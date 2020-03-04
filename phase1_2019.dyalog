@@ -3,4 +3,4 @@
  vowelcount←'AEIOU'(+/∊)⍨⊢
 
  ⍝ Problem 1: Chunky Monkey
- chunkymonkey←{((⍴⍵)⍴⍺↑1,⍺⍴0)⊂⍵}
+ chunkymonkey←{((⍴⍵)⍴(1,1↓⍺⍴0))⊂⍵}
