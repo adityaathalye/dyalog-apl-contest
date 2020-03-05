@@ -6,4 +6,4 @@
  chunkymonkey←{((⍴⍵)⍴(1,1↓⍺⍴0))⊂⍵}
 
  ⍝ Problem 2: Making the "grade"
- makethegrade ← {(65 5 10 10 11/'FDCBA')[1+(0,⍳100)⍸⍵]}
+ makethegrade←(65 5 10 10 11/'FDCBA'){⍺[1+(⍒⍺)⍸⍵]}⊢
