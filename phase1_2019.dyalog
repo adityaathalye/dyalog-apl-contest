@@ -7,3 +7,6 @@
 
  ⍝ Problem 2: Making the "grade"
  makethegrade←(65 5 10 10 11/'FDCBA'){⍺[1+(⍒⍺)⍸⍵]}⊢
+
+ ⍝ Problem 3: Grade distribution, approximately working as per question
+ gradedistribution←{⍵,(⍉((1↓⍉⍵)×100÷(+/1↓⍉⍵)))}{⍺,≢⍵}⌸ ⍝ Need to round percentage to first decimal
