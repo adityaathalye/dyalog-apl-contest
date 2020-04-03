@@ -14,6 +14,6 @@
  ⍝ Problem 4: Knight moves from current position on chessboard
  knightmoves←{
      hopoffsets←(¯2 ¯1)(¯2 1)(¯1 ¯2)(¯1 2)(1 ¯2)(1 2)(2 ¯1)(2 1)
-     hopsonboard←{(∧⌿¨0∘<⍵)/⍵}  ⍝ 0 and negative indices are off-board
+     hopsonboard←{(^⌿¨(9∘>⍵)∧(0∘<⍵))/⍵}  ⍝ indices < 1 or > 8 are off-board
      hopsonboard hopoffsets∘.+⊂⍵
  }
